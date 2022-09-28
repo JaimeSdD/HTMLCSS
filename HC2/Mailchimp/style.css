@@ -1,0 +1,45 @@
+.container{
+    display:flex;
+    width:100%;
+}
+
+.image{
+    align-items:flex-start;
+    margin-top:20px;
+}
+
+.form{
+    justify-content: center;
+}
+
+.box{
+    width:470px;
+    height:30px;
+}
+
+ul{
+    column-count:2;
+    margin-left:-25px;
+}
+
+li::marker{
+    color:blue;
+}
+
+.smallfont{
+    font-size:14px;
+}
+
+button {
+    padding:10px;
+    width:100px;
+    background-color:transparent;
+    border-color:grey;
+    border-width:thin;
+}
+
+.check{
+    margin-left:20px;
+    margin-right:20px;  
+}
+
