@@ -1,202 +1,164 @@
-/* Maquetado con una pantalla de 1180px como referencia. 
-Más hincapié en aprender a maquetar.
-Siguiente paso: Responsive */
-
-*{
-    margin:0;
-    padding:0;
-}
-
-body{
-    width:80%;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
-   background-image:url("https://wallpaperaccess.com/full/1554619.jpg");
-   background-repeat:no-repeat;
-   background-size:cover;
-   background-position:center center;
-   height:500px;
+  background-image: url("https://wallpaperaccess.com/full/1554619.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
 }
 
-.nav_menu{
-    display:flex;
-    height:106px;
+.nav_menu {
+  display: flex;
+  height: 106px;
 }
 
-.line{
-    width:68%;
-    height:80px;
-    margin-left:12%;
-    border-bottom:solid 1px white;
+.line {
+  width: 68%;
+  height: 80px;
+  margin-left: 12%;
+  border-bottom: 1px solid white;
 }
 
-.div_menu{
-    padding:31.5px 0px;
-    margin-left:0;
+.div_menu {
+  padding: 31.5px 0px;
+  margin-left: 0px;
 }
 
-div span{
-    margin:10px;
-    color:white;
-    font-size:15px;
+div span {
+  margin: 10px;
+  color: white;
+  font-size: 15px;
 }
-
-.resize{
-    height:76%;
+.resize {
+  height: 76%;
 }
-
-.botHeader{
-    display:flex;
-    flex-direction:column;
-    margin-top:0px;
-    margin-left:30px;
+.botHeader {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 30px;
 }
-
 .botHeader p {
-    color:white;
+  color: white;
+}
+.fontA {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 252px;
+  text-align: center;
+  text-shadow: rgb(255, 255, 255) 0px 0px 7px;
+}
+.fontN {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.buttonD {
+  background-color: mediumblue;
+  color: white;
+  width: 120px;
+  height: 30px;
+}
+.buttonD:hover {
+  border: 1px solid;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 20px inset,
+    rgba(255, 255, 255, 0.2) 0px 0px 20px;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: rgb(66, 115, 136) 1px 1px 2px;
+}
+ul {
+  list-style-type: none;
+}
+#shop {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#shop ul {
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-around; 
 }
 
-.fontA{
-    font-size:30px;
-    margin-top:20px;
-    margin-bottom:252px;
-    text-align:center;
-    text-shadow:0 0 7px #fff;
+#shop li {
+  height: 35px;
+  width: 6;
+  text-align: center;
 }
-.fontN{
-    font-size:16px;
-    margin-bottom:10px;
-}
-
-.buttonD{
-    background-color:mediumblue;
-    color:white;
-    width:120px;
-    height:30px;
+#shop li:hover {
+  color: blue;
+  font-weight: bold;
+  border-bottom: 1px solid blue;
 }
 
-.buttonD:hover{
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
-    text-shadow: 1px 1px 2px #427388; 
+.organize {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-ul{
-    list-style-type:none;
+.carresize {
+  margin: 20px 10px;
+  height: auto;
+  width: 20%;
 }
-
-#shop{
-    display:flex;
-    justify-content:center;
-    margin-top:50px;
+.imgResize {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
-
-#shop ul{
-    border-bottom:solid 1px grey;
-    max-width:617px;
-}
-
-#shop li{
-    display:inline-block;
-    margin:0 10px;
-    height:35px;
-    width:50px;
-    text-align:center;
-}
-
-#shop li:hover{
-    color:blue;
-    font-weight:bold;
-    border-bottom:solid 1px blue;
-}
-
-.shopDiv{
-    width:70%;
-}
-
-.organize{
-    display:flex;
-    flex-wrap:wrap;
-}
-
-.carresize{
-    margin: 20px 10px;
-    height: auto;
-    width: 131px;
-    max-width:131px;
-}
-
-.imgResize{
-    width:auto;
-    height:auto;
-    max-width:100%;
-    max-height:100%;  
-}
-
 .carresize p:nth-child(2) {
-    font-size:15px;
-    font-weight:bold;
+  font-size: 15px;
+  font-weight: bold;
 }
-
 .carresize p:last-child {
-    font-size:10px;
-    color:grey;
+  font-size: 10px;
+  color: grey;
 }
-
 #quick {
-    display:flex;
-    justify-content:center;
-    margin-top:50px;
+  margin-top: 50px;
 }
-
-.quickDiv{
-    display:flex;
-    width:70%;
+.quickDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
-
-.divB{
-    margin:0 6px;
+.divB {
+  width: -19%;
 }
-
-.quickButton{
-    width:140px;
-    height:90px;
+.quickButton {
+  width: 137px;
+  height: 90px;
 }
-
 i {
-    font-size:20px;
+  font-size: 20px;
 }
-
-.divB p{
-    margin-top:10px;
+.divB p {
+  margin-top: 10px;
 }
-
-footer{
-    display:flex;
-    justify-content: center;
-    background-color:#E6E6E6;
-    margin-top:50px;
-    padding:55px;
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
+  margin-top: 50px;
+  padding: 55px;
 }
-
-.lineFooter{
-    display:flex;
-    justify-content: space-between;
-    border-top:solid 1px black;
+.lineFooter {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
 }
-
-footer ul{
-    margin:20px 45px;
+footer ul {
+  margin: 20px 45px;
 }
-
-footer li{
-    margin:5px 0;
+footer li {
+  margin: 5px 0px;
 }
-
 footer ul li:first-child {
-    font-weight:bold;
-    margin-bottom:20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
