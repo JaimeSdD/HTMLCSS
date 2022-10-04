@@ -7,6 +7,11 @@
   color: black;
 }
 
+.nav-link:hover{
+  color:black;
+  text-decoration:underline;
+}
+
 main {
   background-color: #541554;
 }
@@ -51,10 +56,6 @@ section.pb-5 p {
   min-width: 100%;
   min-height: 100%;
   max-width:700px;
-}
-
-.nav-link {
-  color: white;
 }
 
 h1{
@@ -108,10 +109,15 @@ video {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #navbarNav {
     background-color: #541554;
   }
+  
+  .nav-link, .nav-link:hover{
+    color: white;
+  }
+  
 }
 
 @media (max-width: 992px){
